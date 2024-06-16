@@ -1,0 +1,237 @@
+/* Сброс стилей для лучшего отображения на всех устройствах */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8; /* Более мягкий цвет фона */
+    font-size: 20px; /* Увеличенный базовый размер текста */
+    line-height: 1.6; /* Улучшение читаемости */
+    color: #333; /* Более мягкий черный цвет текста */
+    scroll-behavior: smooth; /* Плавный скроллинг */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Основной контейнер для содержимого */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили навигации */
+header {
+    background-color: #388e3c; /* Темно-зеленый цвет */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #255c4e; /* Темный хвойный зеленый при наведении */
+}
+
+/* Footer styles */
+footer {
+    background-color: #388e3c; /* Темно-зеленый цвет */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+}
+
+.hero {
+    background: url('https://img.goodfon.ru/original/1920x1080/d/c4/ivan-ivanovich-shishkin-les.jpg') no-repeat center center/cover;
+    color: #388e3c; /* Темно-зеленый цвет текста */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    margin: 40px 0;
+    backdrop-filter: blur(10px); /* Эффект blur */
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #388e3c; /* Темно-зеленый цвет заголовков */
+    font-size: 28px; /* Увеличенный размер заголовков */
+}
+
+p {
+    color: #333; /* Мягкий черный цвет абзацев */
+    font-size: 20px; /* Увеличенный размер текста */
+    line-height: 1.6; /* Улучшение читаемости */
+}
+
+li {
+    color: #333; /* Мягкий черный цвет элементов списка */
+    font-size: 20px; /* Увеличенный размер текста для элементов списка */
+    line-height: 1.6; /* Улучшение читаемости */
+}
+
+/* Button link styles */
+a.button-link {
+    display: inline-block;
+    background-color: #388e3c; /* Темно-зеленый цвет */
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px 0; /* добавляет немного пространства между кнопками */
+    width: 100%; /* кнопки занимают всю ширину */
+    box-sizing: border-box; /* учитывать padding в ширине */
+    text-align: center; /* текст по центру */
+}
+
+a.button-link:hover {
+    background-color: #255c4e; /* Темный хвойный зеленый */
+    color: #e0f7fa;
+}
+
+/* Remove list item markers */
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Стили для секции "Практика" */
+#practice {
+    background-color: rgba(56, 142, 60, 0.2); /* Полупрозрачный темно-зеленый цвет */
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    text-align: center; /* Центрирование текста */
+}
+
+#practice h2 {
+    color: #388e3c; /* Темно-зеленый цвет заголовка */
+    font-size: 28px; /* Увеличенный размер заголовка */
+}
+
+#practice p {
+    color: #666;
+}
+
+/* Стили для кнопок в секции "Практика" */
+#practice .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Центрирование кнопок по горизонтали */
+    gap: 20px; /* Добавление расстояния между кнопками */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+#practice .buttons button {
+    background-color: #388e3c; /* Темно-зеленый цвет */
+    color: #fff;
+    padding: 15px 30px; /* Увеличенный padding для кнопок */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px; /* Увеличенный размер шрифта */
+    transition: background-color 0.3s, color 0.3s;
+    width: 180px; /* Увеличенная ширина кнопки */
+    text-align: center; /* Центрирование текста на кнопке */
+    border: none; /* Убираем стандартные стили кнопки */
+}
+
+#practice .buttons button:hover {
+    background-color: #255c4e; /* Темный хвойный зеленый при наведении */
+    color: #e0f7fa;
+}
+
+/* Styles for "About Me" section */
+#about {
+    background: url('Q4dt3yx8n6s.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center 35%;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+}
+
+#about .about-img {
+    flex: 1;
+}
+
+#about .about-img img {
+    border-radius: 15%; /* Скругление краев до половины ширины / высоты */
+    max-width: 100%; /* Ограничение максимальной ширины изображения */
+    height: auto; /* Автоматическая высота */
+    display: block; /* Убираем нижние отступы изображения */
+}
+
+#about .about-content {
+    background-color: rgba(255, 255, 255, 0.5); /* Изменено на 50% прозрачности */
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 2;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+/* General styles for transitions */
+section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
