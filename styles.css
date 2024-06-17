@@ -185,8 +185,8 @@ ul, ol {
 }
 
 #practice .buttons button:hover {
-    background-color: #255c4e; /* Темный хвойный зеленый при наведении */
-    color: #e0f7fa;
+    background-color: #0b4234; /* Темный хвойный зеленый при наведении */
+    color: #e0f7fa00;
 }
 
 /* Styles for "About Me" section */
@@ -195,7 +195,7 @@ ul, ol {
     background-size: cover;
     background-position: center 35%;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 0px;
     display: flex;
     align-items: center; /* Центрирование по вертикали */
 }
@@ -205,14 +205,14 @@ ul, ol {
 }
 
 #about .about-img img {
-    border-radius: 15%; /* Скругление краев до половины ширины / высоты */
-    max-width: 100%; /* Ограничение максимальной ширины изображения */
+    border-radius: 0%; /* Скругление краев до половины ширины / высоты */
+    max-width: auto; /* Ограничение максимальной ширины изображения */
     height: auto; /* Автоматическая высота */
     display: block; /* Убираем нижние отступы изображения */
 }
 
 #about .about-content {
-    background-color: rgba(255, 255, 255, 0.5); /* Изменено на 50% прозрачности */
+    background-color: rgba(255, 255, 255, 0.9); /* Изменено на 50% прозрачности */
     padding: 20px;
     border-radius: 15px;
     margin-left: 20px;
